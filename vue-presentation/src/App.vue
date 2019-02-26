@@ -1,20 +1,25 @@
 <template>
   <div id="app">
     <Header />
+    <Toggler />
     <router-view/>
+    <Markdown />
     <Footer />
   </div>
 </template>
 
 <script>
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Toggler from '@/components/ToggleMode';
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
+    Toggler
   }
 };
 </script>

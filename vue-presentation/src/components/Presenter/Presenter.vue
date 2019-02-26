@@ -1,21 +1,27 @@
 <template>
   <div class="demo-wrapper">
     <Frames />
-    {{msg}}
+    <SliderControls />
+    <Slide />
   </div>
 </template>
 
 <script>
-import Frames from '@/components/Presenter/Frames';
+
+import Frames from './Frames';
+import SliderControls from './SliderControls';
+import Slide from './Slide';
 
 export default {
   name: 'Demo',
   components: {
-    Frames
+    Frames,
+    SliderControls,
+    Slide
   },
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'Welcome to kfhdgjdf Vue.js App',
     };
   },
 };
@@ -26,5 +32,6 @@ export default {
     display: flex;
     width: 100%;
     height: 100%;
+    background: #e0e0e0;
   }
 </style>

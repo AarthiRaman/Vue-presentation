@@ -15,13 +15,12 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.frames {
+  .frames {
     justify-content: flex-start;
     background: #666;
     color: #fff;
     width: 25%;
     height: 100%;
-}
+  }
 </style>

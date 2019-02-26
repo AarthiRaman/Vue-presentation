@@ -15,9 +15,8 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.footer {
+  .footer {
     position: absolute;
     bottom: 0;
     padding: 20px 0;
@@ -25,5 +24,5 @@ export default {
     background: #333;
     color: #fff;
     width: 100%;
-}
+  }
 </style>
