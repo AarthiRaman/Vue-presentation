@@ -1,7 +1,8 @@
 <template>
   <div class="demo-wrapper">
-    <SlideList />
-    {{msg}}
+    <div>
+    <h2>Counter Example</h2>
+  </div>
   </div>
 </template>
 
@@ -11,9 +12,10 @@ export default {
   name: 'Demo',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      count: 0,
     };
   },
+
 };
 </script>
 
@@ -22,6 +24,10 @@ export default {
   .demo-wrapper {
     display: flex;
     width: 100%;
-    height: 100%;
+  }
+
+  .counter {
+    text-align: justify;
+    margin: 0 auto;
   }
 </style>

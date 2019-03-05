@@ -9,7 +9,7 @@ export default {
   name: 'Footer',
   data() {
     return {
-      msg: 'Copyrighted and Patented by Aarthi Raman 😝.',
+      msg: 'I cant think of anything that would go in here 😬',
     };
   },
 };

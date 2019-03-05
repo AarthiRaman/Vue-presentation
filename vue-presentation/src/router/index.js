@@ -13,6 +13,11 @@ export default new Router({
       component: Demo,
     },
     {
+      path: '/',
+      name: 'Presentation',
+      component: Presenter,
+    },
+    {
       path: '/slide',
       name: 'Presentation',
       component: Presenter,

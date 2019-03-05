@@ -13,10 +13,10 @@
 <img src="https://cli.vuejs.org/favicon.png" width="200px"  />
 
 <ol>
-  <li><h4>Size</h4></li>
-  <li><h4>Declarative</h4></li>
-  <li><h4>Ease of integration</h4></li>
-  <li><h4>Scalability and versatility</h4></li>
+  <li>Size - <a target="_blank" href="https://gist.github.com/Restuta/cda69e50a853aa64912d">Size charts</a></li>
+  <li>Declarative</li>
+  <li>Ease of integration</li>
+  <li>Scalability and versatility</li>
 </ol>
 <!-- Insights.vue -->
 ```
@@ -30,14 +30,35 @@
 <!-- Comparison.vue -->
 ```
 
+```html
+<!-- Core-Concepts.vue -->
+<h2>Getting Started</h2>
+<a target="_blank" href="https://jsfiddle.net/chrisvfritz/50wL7mdz/">
+  Starter setup on browser
+</a>
+</br/>
+</br/>
+</br/>
+<h3>Key Concepts</h3>
+<ul>
+  <li>Rendering</li>
+  <li>Component</li>
+  <li>Routing</li>
+  <li>State Management</li>
+  <li>Build System</li>
+</ul>
+<!-- Core-Concepts.vue -->
+```
 
 ```html
-<!-- Getting-Started.vue -->
-<h2>Getting Started</h2>
-<div>
-  <a href="https://codepen.io/flaviocopes/pen/YLoLOp">Codepen example</a>
-</div>
-<!-- Getting-Started.vue -->
+<!-- Rendering.vue -->
+<h2>Rendering</h2>
+<ul>
+  <li>
+    <a target="_blank" href="https://codepen.io/flaviocopes/pen/YLoLOp">Codepen example</a>
+  </li>
+</ul>
+<!-- Rendering.vue -->
 ```
 
 ```html

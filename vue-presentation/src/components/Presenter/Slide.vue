@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
   .slideContainer {
     display: flex;
     width: 80%;
@@ -38,8 +38,11 @@ export default {
     height: 100%;
   }
 
-  .slide  li{
-    width: 50%;
-    height: 100%;
-  }
+.slide ul, 
+.slide ol {
+    width: 300px;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 20px;
+}
 </style>
