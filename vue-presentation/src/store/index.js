@@ -5,12 +5,12 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    currentSlide: 1,
+    currentSlide: 0,
     currentMode: 'Presentation',
   },
   mutations: {
-    changeSlide(state, counter) {
-      state.currentSlide += counter;
+    changeSlide(state, changedSlide) {
+      state.currentSlide = changedSlide;
     },
     toggleMode(state, newMode) {
       state.currentMode = newMode;

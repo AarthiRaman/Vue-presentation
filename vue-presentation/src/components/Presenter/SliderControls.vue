@@ -10,7 +10,7 @@ export default {
   name: 'sliderControls',
   data() {
     return {
-      msg: 'Vue.js Presentation',
+      
     };
   },
 };
@@ -18,15 +18,16 @@ export default {
 
 <style scoped>
   .sliderControls {
+    display: none;
     justify-content: space-between;
     color: #fff;
-    width: 86%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 24%;
+    width: 76%;
+    /* 
+    display: flex; */
+    top: 20%;
     position: fixed;
-    left: 18.5%;
+    left: 25.5%;
+    margin: 5% 0 0;
   }
 
   .leftArrow, .rightArrow {
@@ -37,7 +38,6 @@ export default {
     border-radius: 100%;
     cursor: pointer;
     margin: 20% 6%;
-
   }
 
 </style>

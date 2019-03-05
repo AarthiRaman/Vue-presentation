@@ -6,13 +6,9 @@
 </template>
 
 <script>
-import SlideList from '@/components/Presenter/SlideList';
 
 export default {
   name: 'Demo',
-  components: {
-    SlideList
-  },
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',

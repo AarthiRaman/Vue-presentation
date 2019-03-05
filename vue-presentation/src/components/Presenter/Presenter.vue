@@ -2,7 +2,7 @@
   <div class="demo-wrapper">
     <SlideList v-bind:titles="contents" />
     <SliderControls />
-    <Slide v-bind:contents="contents"> 
+    <Slide v-bind:contents="contents[currentSlide]"> 
       
     </Slide>
   </div>
@@ -14,6 +14,7 @@ import SlideList from './SlideList';
 import SliderControls from './SliderControls';
 import Slide from './Slide';
 import Markdown from '../../../slides/slide.md';
+import store from '../../store';
 
 const markDown = Object.entries(Markdown.components).map(([key, value]) => ({key,value}));
 
@@ -25,8 +26,12 @@ export default {
     Slide,
     Markdown
   },
+  computed: {
+    currentSlide() { return store.state.currentSlide }
+  },
   data() {
     return {
+      slideNumber: store.state.currentSlide,
       contents: markDown
     };
   },
