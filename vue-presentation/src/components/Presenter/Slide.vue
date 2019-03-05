@@ -1,19 +1,23 @@
 <template>
-  <div class="slide">
-    <Markdown />
+  <div class="slideContainer">
+     <h3></h3>
+    <template>
+      <div class="slide"
+      v-for="contentBlock in contents" 
+      v-bind:key="contentBlock.key"
+      v-html="contentBlock.value.template"></div>
+
+    </template>
   </div>
 </template>
 
 <script>
-import Markdown from '../../../slides/slide.md';
-
-export default {
+export default { 
   name: 'slide',
+  props: ['contents'],
   components: {
-      Markdown
   },
   data() {
-      console.log(Markdown);
 
     return {
       msg: 'Welcome to kfhdgjdf Vue.js App',
@@ -23,11 +27,16 @@ export default {
 </script>
 
 <style scoped>
-  .slide {
+  .slideContainer {
     display: flex;
     width: 80%;
     height: 75%;
     background: #fff;
-    margin: 2.5% 5% ;
+    margin: 2.5%  ;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
   }
 </style>

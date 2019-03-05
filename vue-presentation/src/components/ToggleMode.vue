@@ -1,26 +1,31 @@
 <template>
+
   <div class="toggle">
-    <div v-bind:class="{ active: activeEle === 'demo' }" 
-          v-on:click="reverseMessage('demo')">
+    <div v-bind:class="{ active: activeEle === 'Demo' }" 
+          v-on:click="toggleMode('Demo')">
           Demo
     </div>
 
-    <div v-bind:class="{ active: activeEle === 'presentation' }" 
-          v-on:click="reverseMessage('presentation')">
+    <div v-bind:class="{ active: activeEle === 'Presentation' }" 
+          v-on:click="toggleMode('Presentation')">
           Presentation
     </div>
   </div>
 </template>
 
 <script>
+import router from '../router/index';
+import store from '../store';
+
 export default {
     name: 'Toggler',
     data: () => ({
-       activeEle: 'demo',
+       activeEle: store.state.currentMode,
     }),
     methods: {
-      reverseMessage: function (activeEleCHnages) {
-          this.activeEle = activeEleCHnages;
+      toggleMode: function (activeEleChanges) {
+          store.commit('toggleMode', activeEleChanges)
+          router.push({ name: activeEleChanges})
       }
     }
       

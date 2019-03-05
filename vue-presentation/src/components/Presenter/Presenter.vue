@@ -1,27 +1,33 @@
 <template>
   <div class="demo-wrapper">
-    <Frames />
+    <SlideList v-bind:titles="contents" />
     <SliderControls />
-    <Slide />
+    <Slide v-bind:contents="contents"> 
+      
+    </Slide>
   </div>
 </template>
 
 <script>
 
-import Frames from './Frames';
+import SlideList from './SlideList';
 import SliderControls from './SliderControls';
 import Slide from './Slide';
+import Markdown from '../../../slides/slide.md';
+
+const markDown = Object.entries(Markdown.components).map(([key, value]) => ({key,value}));
 
 export default {
   name: 'Demo',
   components: {
-    Frames,
+    SlideList,
     SliderControls,
-    Slide
+    Slide,
+    Markdown
   },
   data() {
     return {
-      msg: 'Welcome to kfhdgjdf Vue.js App',
+      contents: markDown
     };
   },
 };

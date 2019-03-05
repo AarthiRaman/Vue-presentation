@@ -1,17 +1,17 @@
 <template>
   <div class="demo-wrapper">
-    <Frames />
+    <SlideList />
     {{msg}}
   </div>
 </template>
 
 <script>
-import Frames from '@/components/Presenter/Frames';
+import SlideList from '@/components/Presenter/SlideList';
 
 export default {
   name: 'Demo',
   components: {
-    Frames
+    SlideList
   },
   data() {
     return {
@@ -21,6 +21,7 @@ export default {
 };
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .demo-wrapper {
     display: flex;
