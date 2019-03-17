@@ -25,6 +25,7 @@ export default {
     methods: {
       toggleMode: function (activeEleChanges) {
           store.commit('toggleMode', activeEleChanges)
+          this.activeEle = store.state.currentMode;
           router.push({ name: activeEleChanges})
       }
     }
